@@ -2,151 +2,119 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <link rel="stylesheet" href="/src/css/style.css" />
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="../public/css/styles.css">
+    <link rel="icon" href="../public/Assets">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT:wght@400;700&family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
-    <link href="https://fonts.googleapis.com/css2?family=Archivo:wght@400;600;700&family=Old+Standard+TT&family=Roboto:wght@400;700&display=swap" rel="stylesheet" />
-
     <title>Hotel Miranda</title>
 </head>
 
 <body>
-    <header class="header">
-        <div class="header__burguer__menu">
-            <img id="header__burguer__menu__icon" src="./src/img/burguermenu.png" alt="Menu Button" />
-            <img id="header__burguer__menu__close__icon" src="./src/img/close.png" alt="Menu close Button" />
-        </div>
-        <div class="header__hotel__logo">
-            <img id="header__hotel__logo__img" src="./src/img/hotel-miranda-logo.png" alt="Hotel Miranda Logo" />
-        </div>
-        <div class="header__icons__logo">
-            <div>
-                <img id="header__icons__logo__profile" src="./src/img/profile.png" alt="profile button" />
+    <header>
+        <div id="nav-scroll" class="container-menu">
+            <div class="container-menu__toggle">
+                <div class="container-menu__burger"><img src="../public/Assets/1.png"></div>
+                <div class="container-menu__burger-close"><img src="../public/Assets/icon/cerrar.png"></div>
             </div>
-            <div>
-                <img id="header__icons__logo__search" src="./src//img/lupa.png" alt="Search Button" />
+            <a href="./index.php">
+                <div class="container-menu__box-h">
+                    <p>H</p>
+                </div>
+            </a>
+            <div class="container-menu__main-title"><span class="container__title">HOTEL</span>
+                <p>MIRANDA</p>
             </div>
+            <div class="nav__list ">
+                <a class="a-menu" href="about.php">About Us</a>
+                <a class="a-menu" href="rooms.php">Rooms</a>
+                <a class="a-menu" href="offers.php">Offers</a>
+                <a class="a-menu" href="contact.php">Contact</a>
+            </div>
+            <div><img src="../public/Assets/Vector.png"></div>
+            <div class="container-menu__search"><img src="../public/Assets/search.png"></div>
         </div>
     </header>
+    @section ("main")
+    @show
 
-    <footer class="footer">
-        <div class="footer__first__block">
-            <div class="footer__first__block__header">
-                <img src="./src/img/logo.png" alt="hotel miranda logo" />
-            </div>
-            <div class="footer__first__block__text">
-                <p>
-                    Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing
-                    eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-                    ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.
-                </p>
-            </div>
-            <div class="footer__first__block__logos">
-                <a href="https://www.facebook.com/">
-                    <div class="logo-wrap">
-                        <img src="./src/img/fb.png" alt="Facebook logo" />
-                    </div>
-                </a>
-                <a href="https://twitter.com/">
-                    <div class="logo-div">
-                        <img src="./src/img/twitter.png" alt="Twitter logo" />
-                    </div>
-                </a>
-                <a href="https://www.behance.net/">
-                    <div class="logo-wrap">
-                        <img src="./src/img/behance.png" alt="Behance logo" />
-                    </div>
-                </a>
-                <a href="https://www.linkedin.com/">
-                    <div class="logo-wrap">
-                        <img src="./src/img/lk.png" alt="LinkedIn logo" />
-                    </div>
-                </a>
-                <a href="https://youtube.com/watch?v=dQw4w9WgXcQ&feature=shares">
-                    <img src="./src/img/yt.png" alt="Youtube logo" /></a>
-            </div>
-        </div>
-        <div class="footer__second__block">
-            <h3>Services.</h3>
-            <div class="footer__second__block__wrap">
-                <div class="footer__second__block__left">
-                    <div class="cell">
-                        <p>+ Restaurante Bar</p>
-                    </div>
-                    <div class="cell">
-                        <p>+ Swimming Pool</p>
-                    </div>
-                    <div class="cell">
-                        <p>+ Wellness & Spa</p>
-                    </div>
-                    <div class="cell">
-                        <p>+ Restaurant</p>
-                    </div>
-                    <div class="cell">
-                        <p>+ Conference Room</p>
-                    </div>
-                    <div class="cell">
-                        <p>+ Coctail Party House</p>
+    <section class="footer">
+        <div class="footer__main">
+            <div class="footer__main-column1">
+                <div class="footer__container">
+                    <div class="footer__logo">H</div>
+                    <div class="footer__main-title"><span class="footer__title">HOTEL</span>
+                        <p>MIRANDA</p>
                     </div>
                 </div>
-                <div class="footer__second__block__right">
-                    <div class="cell">
-                        <p>+ Gaming Zone</p>
+                <p class="footer__paragraph">Lorem ipsum dolor sit amet, consect etur adipisicing elit, sed doing eius mod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitat ion ullamco laboris nisi.</p>
+                <div class="social">
+                    <img src="../public/Assets/facebook-icon.png" alt="">
+                    <img class="social__twitter" src="../public/Assets/twitter.png" alt="">
+                    <img src="../public/Assets/behance logo_icon 1.png" alt="">
+                    <img src="../public/Assets/linkedin_icon.png" alt="">
+                    <img src="../public/Assets/youtube logo_icon.png" alt="">
+                </div>
+            </div>
+            <div class="service-contact">
+                <div>
+                    <h5>Services.</h5>
+                    <div class="services-list">
+                        <div class="services-list__1">
+                            <p class="services-list__p">+ Restaurant Bar</p>
+                            <p class="services-list__p">+ Swimming Pool</p>
+                            <p class="services-list__p">+ Wellness & Spa</p>
+                            <p class="services-list__p">+ Tennis Courts</p>
+                            <p class="services-list__p">+ Conference Room</p>
+                            <p class="services-list__p">+ Cocktail Party House</p>
+                        </div>
+                        <div class="services-list__2">
+                            <p class="services-list__p">+ Gaming Zone</p>
+                            <p class="services-list__p">+ Marrige Party</p>
+                            <p class="services-list__p">+ Party Plannung</p>
+                            <p class="services-list__p">+ Tour Consultancy</p>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>+ Marrige Party</p>
+                </div>
+                <div class="contact-us">
+                    <h5>Contact Us.</h5>
+                    <div class="contact-icons">
+                        <img src="../public/Assets/phone-icon.png" alt="phone">
+                        <div class="contact-icons__numbers">
+                            <h4>Phone Number</h4>
+                            <p>+98787676576577</p>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>+ Party Planning</p>
+                    <div class="contact-icons">
+                        <img src="../public/Assets/mail-icon.png" alt="mail">
+                        <div class="contact-icons__numbers">
+                            <h4>Phone Number</h4>
+                            <p>+98787676576577</p>
+                        </div>
                     </div>
-                    <div class="cell">
-                        <p>+ Tour Consultancy</p>
+                    <div class="contact-icons" class="contact-us__icons">
+                        <img src="../public/Assets/location-icon.png" alt="location">
+                        <div class="contact-icons__numbers">
+                            <h4>Phone Number</h4>
+                            <p>+98787676576577</p>
+                        </div>
                     </div>
                 </div>
             </div>
         </div>
-        <div class="footer__third__block">
-            <h3>Contact Us</h3>
-            <div class="footer__third__block__row">
-                <dir class="footer__third__block__img">
-                    <img src="./src/img/phone.png" alt="a phone symbol" />
-                </dir>
-                <div class="footer__third__block__text">
-                    <h5>Phone Number</h5>
-                    <p>+987 876 765 76 577</p>
-                </div>
-            </div>
-            <div class="footer__third__block__row">
-                <dir class="footer__third__block__img">
-                    <img src="./src/img/mail.png" alt="a phone symbol" />
-                </dir>
-                <div class="footer__third__block__text">
-                    <h5>Phone Number</h5>
-                    <p>+987 876 765 76 577</p>
-                </div>
-            </div>
-            <div class="footer__third__block__row">
-                <dir class="footer__third__block__img">
-                    <img src="./src/img/location.png" alt="a phone symbol" />
-                </dir>
-                <div class="footer__third__block__text">
-                    <h5>Phone Number</h5>
-                    <p>+987 876 765 76 577</p>
-                </div>
+        <div class="copyright">
+            <div class="copyright__paragraph">
+                <p>Copyright By@Example-2020</p>
+                <p>Terms of use | Privacy Environmental Policy</p>
             </div>
         </div>
-        <div class="footer__fourth__block">
-            <h5 id="cp">Copyright By@Example - 2020</h5>
-            <h5 id="tos">
-                <a href="">Terms of use </a> |
-                <a href=""> Privacy Environmental Policy</a>
-            </h5>
-        </div>
-    </footer>
+    </section>
     <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
-    <script type="text/javascript" src="./app.js" />
+    <script type="text/javascript" src="../public//JavaScript/index.js"></script>
 </body>
 
 </html>
