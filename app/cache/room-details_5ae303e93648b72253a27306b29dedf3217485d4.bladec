@@ -29,6 +29,12 @@
  <input type="date" placeholder="30th march 2020" name="checkOut"></input>
  </div>
  <button>CHECK AVAILABILITY</button>
+ <?php if($isAvailable): ?>
+
+ <h3 style="color:green">Booked!</h3>
+
+ <?php endif; ?>
+
  </form>
 </section>
 <div class="paragraph-lorem">

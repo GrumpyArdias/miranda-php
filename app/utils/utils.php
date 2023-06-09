@@ -46,3 +46,11 @@ $roomPhotos = [
     "double-superior" => "../public/Assets/img-room/room2.jpg",
     "suite" => "../public/Assets/img-room/room3.jpg",
 ];
+
+function dateRetification($date)
+{
+    $parts =  explode("/", $date);
+    $newDateArr = [$parts[2], $parts[0], $parts[1]];
+    $newDate = implode("-", $newDateArr);
+    return $newDate;
+}

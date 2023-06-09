@@ -41,7 +41,7 @@ if ($_SERVER['REQUEST_METHOD'] === 'POST') {
         $sql = "INSERT INTO comments (id, fullName, commentDate, email, phone, subjet, comment, action) VALUES (:id, :fullName, :commentDate, :email, :phone, :subjet, :comment, :action)";
         $connectionPDO = sqlConnection();
         $stmt = $connectionPDO->prepare($sql);
-        echo "here";
+
         $stmt->bindParam(':id', $object['id'], PDO::PARAM_STR);
         $stmt->bindParam(':fullName', $object['fullName'], PDO::PARAM_STR);
         $stmt->bindParam(':commentDate', $object['commentDate'], PDO::PARAM_STR);
