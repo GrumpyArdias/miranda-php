@@ -8,24 +8,25 @@
  </div>
 </div>
 <div>
- <h6 class="double-bed__title">DOUBLE BED</h6>
- <h1>Luxury Double Bed</h1>
- <h5>$345<sub>/Night</sub></h5>
+
+ <h6 class="double-bed__title"><?php echo \htmlentities(strtoupper($room['bedType'])??'', ENT_QUOTES, 'UTF-8', false); ?></h6>
+ <h1>Luxury <?php echo \htmlentities($room["bedType"]??'', ENT_QUOTES, 'UTF-8', false); ?></h1>
+ <h5>$<?php echo \htmlentities($room["price"]??'', ENT_QUOTES, 'UTF-8', false); ?><sub>/Night</sub></h5>
  <div class="double-bed">
- <img src="../public/Assets/img-room/room1.jpg" alt="double-room">
+ <img src="<?php echo \htmlentities($roomPhotos[$room['bedType']]??'', ENT_QUOTES, 'UTF-8', false); ?>" alt="double-room">
  </div>
 </div>
 <!-- form-->
 <section>
  <h4 class="availability-title">Check Availabiity</h4>
- <form class="main__form__container detail-form">
+ <form class="main__form__container detail-form" method="post">
  <div class="main__form__container__body detail-form__input1">
  <label>Check in</label>
- <input type="date" id="date" placeholder="24th march 2020"></input>
+ <input type="date" id="date" placeholder="24th march 2020" name="checkIn"></input>
  </div>
  <div class="main__form__container__body">
  <label>Check out</label>
- <input type="date" placeholder="30th march 2020"></input>
+ <input type="date" placeholder="30th march 2020" name="checkOut"></input>
  </div>
  <button>CHECK AVAILABILITY</button>
  </form>

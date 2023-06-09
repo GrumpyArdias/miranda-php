@@ -14,7 +14,7 @@
 
 <div class="offers">
     <div class="offers__prices">
-        <img alt="room-luxury" />
+        <img src="{{$roomPhotos[$room['bedType']]}}" alt="room-luxury" />
         <div class="offers__prices-text">
             <h5>${{$room['price']}}<sub>/Night</sub></h5>
             <h5>${{round($room['price']*(1-$room['discount']/100))}}<sub>/Night</sub></h5>

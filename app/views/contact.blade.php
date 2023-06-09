@@ -54,7 +54,7 @@
         <img src="../public/Assets/icon/contact/email.png" alt="" />
     </div>
     <div class="contact-form__input-container">
-        <input type="text" placeholder="Enter subject" name="subject" />
+        <input type="text" placeholder="Enter subject" name="subjet" />
         <img src="../public/Assets/icon/contact/book.png" alt="" />
     </div>
     <div class="contact-form__input-container">
